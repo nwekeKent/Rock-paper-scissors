@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <header>
+                <h1 class="display-4 text-center mt-5 text-dark heading">Rock, Paper Scissors</h1>
+                <button class="restart-btn mt-2" id="restart-btn">Restart Game</button>
+                <div class="score mt-3 text-white" id="score">
+                    <p class="lead bg-warning">Player: <span id="player-score" class="text-success h5">0</span></p>
+                    <p class="lead bg-dark">Computer: <span id="computer-score" class="text-danger h5">0</span> </p>
+                </div>
+            </header>
+
+            <h5 class="display-4 text-center heading ">Make your choice</h3>
+                <div class="choices mt-5 text-center">
+                    <i class="choice fa fa-hand-rock-o fa-5x" id="rock"></i>
+                    <i class=" choice fa fa-hand-paper-o fa-5x" id="paper"></i>
+                    <i class=" choice fa fa-hand-scissors-o fa-5x" id="scissors"></i>
+
+                </div>
+
+        </div>
+
+
+        <div class="modal-div">
+            <div class="modal-class" id="result">
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

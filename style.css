@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+header #restart-btn {
+    background-color: rgb(252, 229, 232);
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    display: none;
+
+}
+
+header #restart-btn:hover {
+    background-color: rgb(117, 115, 230);
+    color: white;
+    border: none;
+
+}
+
+header .score {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    text-align: center;
+}
+
+
+
+.heading {
+    line-height: 0.9;
+}
+
+.choices {
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+.choices .choice:hover {
+    color: darkblue;
+}
+
+.modal-div {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-class {
+    background: white;
+    text-align: center;
+    margin: 10% auto;
+    width: 350px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+        0 5px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
